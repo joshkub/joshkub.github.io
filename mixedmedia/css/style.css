@@ -1,0 +1,14 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+table { padding: 17px; }
+th { background: rgb(1, 117, 226)}
+.rheader { background: #c9eeff}
+.medium {width: 200px; height: 200px;}
+
+

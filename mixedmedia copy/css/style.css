@@ -7,7 +7,7 @@ table, th, td {
 }
 
 table { padding: 17px; }
-th { background: rgb(216, 5, 5)}
+th { background: rgb(240, 138, 138)}
 .rheader { background: #c9eeff}
 .medium {width: 300px; height: 200px;}
 
@@ -15,7 +15,17 @@ body {
     color: white;
     background: linear-gradient(#e72828, #0c0403);
     background-size: 100% 100%;
-
 }
+
+a {
+    color: rgb(240, 216, 216)
+}
+
+li {
+    font-size: 20px;
+    list-style-type:decimal;
+    list-style-position: inside;
+}
+
 
 

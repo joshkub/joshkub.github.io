@@ -1,14 +1,21 @@
 table, th, td {
-    border: 1px solid black;
+    border: 10px solid rgb(255, 255, 255);
     border-collapse: collapse;
     padding: 10px;
-    font-family: Arial;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
 table { padding: 17px; }
-th { background: rgb(1, 117, 226)}
+th { background: rgb(216, 5, 5)}
 .rheader { background: #c9eeff}
-.medium {width: 200px; height: 200px;}
+.medium {width: 300px; height: 200px;}
+
+body {
+    color: white;
+    background: linear-gradient(#e72828, #0c0403);
+    background-size: 100% 100%;
+
+}
 
 

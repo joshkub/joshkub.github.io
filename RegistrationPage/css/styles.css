@@ -1,0 +1,19 @@
+.medium {
+    width: 294px;
+    margin: 8px;
+    padding: 5px;
+    border-width: 2px;
+    border-color: black;
+
+}
+.small {
+    width: 130px;
+    margin: 8px;
+    padding: 5px;
+    border-width: 2px;
+}
+
+fieldset {
+    width:fit-content;
+    margin: auto;
+}

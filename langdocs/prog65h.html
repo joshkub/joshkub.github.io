@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prog65h</title>
+</head>
+<body>
+    <label for="pnds">Pounds: </label>
+    <input type="number" id="pnds">
+
+    <label for="shls">Shillings: </label>
+    <input type="number" id="shls">
+
+    <label for="pnce">Pence: </label>
+    <input type="number" id="pnce">
+    
+    <button onclick="
+        let pnds = document.getElementByID('pnds').value;
+        let shls = document.getElementByID('pnds').value;
+        let pnce = document.getElementByID('pnds').value;
+        pnds = Number(pnds)
+        shls = Number(shls)
+        pnce = Number(pnce)
+        
+    ">Calculate</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog54b</title>
+</head>
+<body>
+    <label for="base">Base: </label>
+    <input type="number" id="base">
+    <label for="height">Height: </label>
+    <input type="number" id="height">
+    <button onclick="
+        let height = document.getElementById('height').value;
+        let base = document.getElementById('base').value;
+        height = Number(height)
+        base = Number(base)
+        let hypo = Math.sqrt(base**2 + height**2)
+        let area = (height * base) / 2
+        let peri = base + height + hypo
+        hypo = hypo.toFixed(2)
+        area = area.toFixed(2)
+        peri = peri.toFixed(2)
+        document.writeln('Hypotenuse: ' + hypo + '<br>Area: ' + area + '<br>Perimeter: ' + peri);
+    ">Calculate</button>
+</body>
+</html>

@@ -15,12 +15,14 @@
     
     <button onclick="
         let pnds = document.getElementByID('pnds').value;
-        let shls = document.getElementByID('pnds').value;
-        let pnce = document.getElementByID('pnds').value;
+        let shls = document.getElementByID('shls').value;
+        let pnce = document.getElementByID('pnce').value;
         pnds = Number(pnds)
         shls = Number(shls)
         pnce = Number(pnce)
-        
+        let decp = pnds + shls/20 + pnce/12/20;
+        decp = decp.toFixed(2);
+        document.writeln('Decimal Pounds = ' + decp);
     ">Calculate</button>
 </body>
 </html>

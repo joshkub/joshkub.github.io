@@ -10,6 +10,14 @@
     <input type="number" id="rad">
     <button onclick="
         let pi = 3.14159;
+        let rad = document.getElementById('rad').value;
+        pi = Number(pi)
+        rad = Number(rad)
+        let area = (pi * (rad * rad));
+        let cmfr = (2 * pi * rad);
+        area = area.toFixed(2)
+        cmfr = cmfr.toFixed(2)
+        document.writeln('Area: ' + area + ' Circumference: ' + cmfr);
     ">Calculate</button>
 </body>
 </html>

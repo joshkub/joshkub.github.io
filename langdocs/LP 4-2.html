@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP 4-2</title>
+</head>
+<body>
+    <label for="weight">weight in kg: </label>
+    <input type="number" id="weight" min="0"><br>
+    <label for="length">length in cm: </label>
+    <input type="number" id="length" min="0"><br>
+    <label for="width">width in cm: </label>
+    <input type="number" id="width" min="0"><br>
+    <label for="height">height in cm: </label>
+    <input type="number" id="height" min="0"><br>
+    <button onclick="price()">Calculate</button>
+    <p id="out"></p>
+
+    <script>
+        function price() {
+            let weight = Number(document.getElementById("copies").value);
+            let length = Number(document.getElementById("length").value);
+            let width = Number(document.getElementById("width").value);
+            let height = Number(document.getElementById("height").value);
+            let p = document.getElementById("out");
+
+            if (weight > 0 && weight <= 27) {
+                weight = weight;
+            } else if (weight < 0){
+                p.innerHTML = "Invalid number of copies";
+            } else if (weight > 27){
+                p.innerHTML = "Too Heavy";
+            }
+            if ((length * width * height) > 100000) {
+                p.innerHTML = "Too Heavy"
+
+            }
+            if ((length * width * height > 100000) && weight > 27) {
+                p.innerHTML = "Too Heavy and too big"
+            }
+
+               
+            }
+    </script>
+    
+</body>
+</html>

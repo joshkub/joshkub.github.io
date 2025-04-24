@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mortgage Calculator</h1>
+    <fieldset>
+    <label id ="haha" for="pr">Principal: </label>
+    <input type="number" id="pr"><br>
+
+    <label for="ir">Interest Rate as %: </label>
+    <input type="number" id="ir"><br>
+
+    <label for="ti">Number of Years: </label>
+    <input type="number" id="ti"><br>
+
+    <label for="mp">Monthly Payment: </label>
+    <input type="number" id="mp"><br>
+
+    Balance:<input id="ba"></input>
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        function calculate() {
+            let pr = document.getElementById('pr').value;
+            let ir = document.getElementById('ir').value;
+            let ti = document.getElementById('ti').value;
+            let mp = document.getElementById('mp').value;
+        
+            pr = Number(pr)
+            ir = Number(ir)/100
+            ti = Number(ti)
+            mp = Number(mp)
+
+            b = 0;
+            b = (pr*(1 + ir/12)**(12*ti)) - mp*(Math.abs((1 + ir/12)**(12*ti) -1)/(ir/12))
+            b = b.toFixed(2)
+            document.getElementById('ba').value = "$" + b
+        }
+    </script>
+    </fieldset>
+</body>
+</html>

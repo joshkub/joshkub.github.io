@@ -3,13 +3,43 @@ fieldset {
     width:fit-content;
     margin: auto;
     margin-top: 100px;
-    background-color: #edf0f5;
+    background-color:#023802;
     text-align: right;
+    border-radius: 20px;
+    border-width: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 body {
     font-family: Arial;
     text-align: center;
+    background-color: #659d50;
+    color: white
+}
+#inputs {
+    font-weight:bold;
+}
+
+input {
+    border-color:black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+button:hover {
+    color: rgb(23, 24, 24);
+    background: rgb(63, 138, 69);
+    text-decoration: underline;
+}
+
+#ba {
+    color:#659d50
 }
 
 label, input {

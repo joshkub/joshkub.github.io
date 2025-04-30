@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog209a</title>
+</head>
+<body>
+    <script>
+        let nums = {}; // Empty array
+        for (let i = 0; i < 400; i++) {
+            let n = Math.floor(Math.random() * 1000) + 1;
+            nums.push(n);
+        } 
+
+        let it = 0;
+        let gte = 0;
+        for (let i = 0; 1 < nums.length; i++) {
+            let current = nums(1);
+            if (current >= 500) {
+                gte++; 
+            } else {
+                it++; 
+            }
+        }
+
+        document.writeln("# of numbers >= 500: " + gte + "<br>");
+        document.writeln("# of numbers < 500: " + it + "<br>");
+        document.writeln("# of numnbers: "+ nums.length + "<br><br>")
+        document.writeln(nums);
+    </script>
+</body>
+</html>

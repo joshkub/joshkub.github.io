@@ -1,0 +1,76 @@
+/* Color Scheme: 
+  dark blue: #21486e
+  light blue: #76beff
+*/
+
+body {
+  background-color:  #111;
+  height: auto; width: auto;
+  padding: 0; margin: 0;
+  border-style: solid;
+  border-color: #76beff;
+  border-width: 10px;
+  overflow-x: hidden;
+  font-family: monospace;
+  h1 {font-family: Impact}
+}
+
+/* Side Pannel Related */
+
+.sidepanel {
+  height: 1366px; 
+  width: 0; /* change this with JavaScript */
+  position: fixed; 
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; 
+  transition: 0.5s;  
+  border-style: solid;
+  border-color: #76beff;
+  .icon {width: 75px; height: 75px};
+}
+
+.sidepanel a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Impact;
+  padding: 10px;
+  display: block;
+  color: #76beff;
+  transition: 0.3s;
+
+}
+#topP {
+  border-top: solid;
+  border-color: #76beff;
+}
+#bottomP {
+  border-bottom: solid;
+  border-color: #76beff;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 57px;
+  font-size: 60px;
+  float:right;
+  padding: 0;
+}
+
+.openbtn {
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #111;
+  color: #76beff;
+  border: none;
+  padding-left: 50px;
+}
+
+.openbtn:hover, .sidepanel a:hover, #active {
+  color: #f1f1f1;
+}

@@ -1,0 +1,93 @@
+/* Reset and base styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #111;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  border: solid;
+  height: 700px;
+}
+
+div {
+  border: solid;
+  padding: 20px;
+  
+}
+
+.icon {
+  height: 30px;
+}
+
+#me {
+  height: 250px;
+}
+
+/* Header */
+header {
+  background: #0d0d0d;
+  color: #6aaeec;
+  text-align: center;
+  padding: 1em 0 0 0;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #1c1c1c;
+  border: solid;
+  border-color: #6aaeec;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #111;
+}
+
+.navbar a i {
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* Main content */
+main {
+  background: #0f0f0f;
+  padding: 20px;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #275073;
+  padding: 1em;
+  text-align: center;
+}
+
+h1 { color: #6aaeec}
